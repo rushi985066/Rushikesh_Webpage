@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c4befddb40.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link to your CSS file -->
+    <!-- Add any other meta tags or links to external resources here -->
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Rlogo.jpg" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a
+                href="C:\Users\mahen\OneDrive\Desktop\websie\images\TCS Annual Compensation.pdf"
+                >Download CV</a
+              >
+            </li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>
+            Bachelors in Mechanical Engineer, MS in Automation Control and
+            Robotics
+          </p>
+          <h1>
+            Hi, I'm <span>Rushikesh Mahendrakar</span><br />
+            From United Kingdom
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!---------------about------------------------------------>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/p1.jpeg" alt="Photo" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              <br />A highly motivated and results-driven professional with a
+              strong background in Data science, Software Development, Machine
+              learning, Artificial Intelligence, Industrial Automation and
+              Robotics having diversified portfolio. Proficient in leveraging
+              analytical and programming skills to solve complex problems, drive
+              innovation, and deliver impactful solutions.
+            </p>
+
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('Achievements')">
+                Achievements
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Robotics</span><br />ROS2 with Linux <br />Robotic
+                  Environment Creation using Matlab<br />Industrial Robot
+                  Programming. <br /><a
+                    href="javascript:void(0)"
+                    class="learn-more"
+                    onclick="toggleDetails('robotics-details')"
+                    >Learn more</a
+                  >
+                  <div id="robotics-details" class="hidden">
+                    <p>
+                      1.)Experienced in building industrial robots using Robot
+                      DK, Gazebo, and ABB Robot Simulation.<br />2.)Created
+                      various robotics environments using MATLAB for industrial
+                      applications.<br />3.)Industrial Robot Programming using
+                      Robot DK, Gazebo, ABB Robot Simulation
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <span>Automation</span><br />Arduino Platform <br />IoT and
+                  Raspberry Pi <br />Industrial Automation <br /><a
+                    href="javascript:void(0)"
+                    class="learn-more"
+                    onclick="toggleDetails('automation-details')"
+                    >Learn more</a
+                  >
+                  <div id="automation-details" class="hidden">
+                    <p>
+                      1.)Developed IoT projects using Arduino with C
+                      programming.<br />2.)Comprehensive understanding of IoT
+                      principles and applications. <br />3.)PLC Programming
+                      using Automation Studio and Siemens Tia Software
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <span>Artificial Intelligence</span><br />Built chatbots and
+                  many Sample Projects using AI. <br />LLMs, Neural Networks,
+                  Deep Learning <br /><a
+                    href="javascript:void(0)"
+                    class="learn-more"
+                    onclick="toggleDetails('ai-details')"
+                    >Learn more</a
+                  >
+                  <div id="ai-details" class="hidden">
+                    <p>
+                      1.)Build Chatbot on Google Colab using Chat-GPT, Llama2,
+                      and other APIs via GitHub and Hugging Face.
+                      <br />2.)Fine-tuned and trained different Large Language
+                      Models (LLMs) with knowledge of neural networks and deep
+                      learning.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <span>Machine Learning & Data Science</span
+                  ><br />Python(numpy,pandas,Matplotlib,Scilearn,Tensorflow,Pytorch)
+                  <br />Data Analytics(Data Visulization) <br /><a
+                    href="javascript:void(0)"
+                    class="learn-more"
+                    onclick="toggleDetails('ml-details')"
+                    >Learn more</a
+                  >
+                  <div id="ml-details" class="hidden">
+                    <p>
+                      1.)Proficient in using pandas, numpy, matplotlib, Scilearn
+                      libraries for data analytics and data science projects.
+                      <br />2.)Developed and implemented various machine
+                      learning models for small projects.<br />3.)Tranining of
+                      Various CSV files.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <span>CAD,CAE and CAM</span><br />CAD Designing using
+                  Solidworks, Unigraphics NX, Fusion 360, Autocad. <br />CAE
+                  Analysis using Ansys, Hyperworks and NX.<br />
+                  CAM using Unigraphics NX. <br /><a
+                    href="javascript:void(0)"
+                    class="learn-more"
+                    onclick="toggleDetails('cad-details')"
+                    >Learn more</a
+                  >
+                  <div id="cad-details" class="hidden">
+                    <p>
+                      1.)Create 2D CAD design,3D Models work on many designing
+                      Projects <br />2.)Able to do Structure Analysis, Solid and
+                      Surface Meshing using 2D and 3D Elements.<br />3.)Digital
+                      Manufacturing and Simulation using CAM
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <span>Programming Skills and Other skills</span
+                  ><br />Python,javascript, C and C++. <br />Dynatrace, Tableau,
+                  Echo and Graphana<br />Devops, Azure, SQL, GitHub<br />Postman(API),
+                  Putty, Db Visualizer<br />
+                  MS Office <br /><a
+                    href="javascript:void(0)"
+                    class="learn-more"
+                    onclick="toggleDetails('programming-details')"
+                    >Learn more</a
+                  >
+                  <div id="programming-details" class="hidden">
+                    <p>
+                      1.)Dashboard Creation using Dynatrace, Tableau, Devops,
+                      Echo and Graphana. <br />2.)Certified Python with
+                      Everybody and Data Structure<br />3.)Deployment of
+                      Dashboards on Azure using Deveops, Github and Dashboards
+                      etc.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Tata Consultancy Service Ltd</span><br />
+                  Software Developer<br />2021-2023 <br /><a
+                    href="javascript:void(0)"
+                    class="learn-more"
+                    onclick="toggleDetails('TCS')"
+                    >Learn more</a
+                  >
+                  <div id="TCS" class="hidden">
+                    <p>
+                      Worked as a Backend Developer in TCS, having Proficiency
+                      in a Python, Java script and Sqllite, Postman(API),
+                      Dynatrace Dashboard Creation,Panda, Devops and GitHub.
+                      Handling Major Incidents and Mi calls leading the team of
+                      5 members in ORE 2.0.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <span>Endurance Technologies Pvt Ltd</span><br />
+                  Quality Assurance Engineer<br />
+                  01/2021 - 07/2021 <br /><a
+                    href="javascript:void(0)"
+                    class="learn-more"
+                    onclick="toggleDetails('Endurance')"
+                    >Learn more</a
+                  >
+                  <div id="Endurance" class="hidden">
+                    <p>
+                      Join as a Intern for 6 months as a Quality Assurance
+                      Engineer where I had worked as a Final Inspector for to
+                      check the Quality of the product during Final Inspection.
+                      Also works on CMM for to measure cordinates of the job.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <span>Dhananjay Autoparts Pvt Ltd</span><br />Production and
+                  Process Planning <br />12/2018 - 01/2019 <br /><a
+                    href="javascript:void(0)"
+                    class="learn-more"
+                    onclick="toggleDetails('Dhananjay')"
+                    >Learn more</a
+                  >
+                  <div id="Dhananjay" class="hidden">
+                    <p>
+                      Join as Intern, where Field Training include Introduction
+                      to Product Layout and Quality Assurance where Final
+                      Quality Inspection of Product have been done. Work on
+                      CNC,VMC and HMC Programming for to setup for future
+                      projects of the industry.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Sheffield Hallam University, United Kingdom</span><br />
+                  Masters of Science in Automation Control and Robotics<br />
+                  2023-2024
+                </li>
+                <li>
+                  <span>Dr Babasaheb Ambedkar Technological University</span
+                  ><br />
+                  Bachelors of Technology in Mechanical Engineering<br />
+                  2017-2021
+                </li>
+                <li>
+                  <span>Higher Secondary Education</span><br />Physics,
+                  Chemistry, Mathematics and Biology<br />
+                  2015-2017
+                </li>
+                <li><span>Secondary Education</span><br />School<br />2015</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="Achievements">
+              <ul>
+                <li>
+                  <span>Degree Cerificate</span><br />
+                  Bachelors in Mechanical Engineering<br />2021 <br /><a
+                    href="C:\Users\mahen\OneDrive\Desktop\websie\Achievements\Achievements.html"
+                    >Learn more</a
+                  >
+                </li>
+                <li>
+                  <span>Job Experience</span><br />
+                  Tata Consultancy Services<br />2021-2023 <br /><a
+                    href="C:\Users\mahen\OneDrive\Desktop\websie\Achievements\Achievements.html"
+                    >Learn more</a
+                  >
+                </li>
+                <li>
+                  <span>Internship Certificates</span><br />
+                  2018-2021 <br /><a
+                    href="C:\Users\mahen\OneDrive\Desktop\websie\Achievements\Achievements.html"
+                    >Learn more</a
+                  >
+                </li>
+                <li>
+                  <span>External Courses Certificates</span><br />2017-2024
+                  <br /><a
+                    href="C:\Users\mahen\OneDrive\Desktop\websie\Achievements\Achievements.html"
+                    >Learn more</a
+                  >
+                </li>
+                <li>
+                  <span>Certificates of Participations</span><br />2017-2024
+                  <br /><a
+                    href="C:\Users\mahen\OneDrive\Desktop\websie\Achievements\Achievements.html"
+                    >Learn more</a
+                  >
+                </li>
+                <li>
+                  <span>Social Certificates</span><br />2017-2024 <br /><a
+                    href="C:\Users\mahen\OneDrive\Desktop\websie\Achievements\Achievements.html"
+                    >Learn more</a
+                  >
+                </li>
+                <li>
+                  <span>Others</span> <br /><a
+                    href="C:\Users\mahen\OneDrive\Desktop\websie\Achievements\Achievements.html"
+                    >Learn more</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------services------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-robot"></i>
+            <h2>Robotics and Industrial Automation</h2>
+            <p></p>
+          </div>
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>Data Science and Data Analyst</h2>
+            <p></p>
+          </div>
+          <div>
+            <i class="fa-solid fa-cubes"></i>
+            <h2>CAD, CAM, CAE Service</h2>
+            <p></p>
+          </div>
+          <div>
+            <i class="fa-solid fa-brain"></i>
+            <h2>ML, AI and Web Development</h2>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------portfolio------------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img
+              src="C:\Users\mahen\OneDrive\Desktop\websie\images\Ai and ML.png"
+            />
+            <div class="layer">
+              <h3>
+                Machine Learning, Artificial Intelligence and Web Development
+              </h3>
+              <p>Develop various Algorithm of Machine Learning and Chatbot</p>
+              <a
+                href="C:\Users\mahen\OneDrive\Desktop\websie\Ml\machine learning.html"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="C:\Users\mahen\OneDrive\Desktop\websie\images\RRR1.jpeg"
+            />
+            <div class="layer">
+              <h3>Robotics and Automation</h3>
+              <p>
+                Develop Potential Field for Project for Warehouse and Industrial
+                and Humanoid Robot
+              </p>
+              <a
+                href="C:\Users\mahen\OneDrive\Desktop\websie\Ml\machine learning.html"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="C:\Users\mahen\OneDrive\Desktop\websie\images\3d modelling.jpg"
+            />
+            <div class="layer">
+              <h3>3D Modelling and Analysis</h3>
+              <p>CAD, CAM, CAE</p>
+              <a
+                href="C:\Users\mahen\OneDrive\Desktop\websie\Ml\machine learning.html"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------contact----------->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              mahendrakarrushikesh9850@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> +44 7393080491</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="www.linkedin.com/in/rushikesh-mahendrakar-0802941b9"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a
+              href="images/TCS Annual Compensation.pdf"
+              download
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+
+      function toggleDetails(id) {
+        var element = document.getElementById(id);
+        if (element.style.display === "block") {
+          element.style.display = "none";
+        } else {
+          element.style.display = "block";
+        }
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbztNe1mW12kI21HlRkvIepzOkYje9cv5JdrfEnXb2tqZgXWlpdrtaWfmsLfU39HegXZ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+  <div class="thanks-note">
+    <p>❤️Thank you for Visiting My Webpage!</p>
+  </div>
+</html>
