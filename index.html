@@ -517,14 +517,14 @@
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-            msg.innerHTML = "Message sent successfully";
-            setTimeout(function () {
-              msg.innerHTML = "";
-            }, 5000);
-            form.reset();
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
+          console.log('Response:', response); // Log the response
+    msg.innerHTML = "Message sent successfully";
+    form.reset();
+  })
+  .catch((error) => {
+    console.error("Error!", error.message);
+    msg.innerHTML = "Error sending message"; // Update message on error
+  });
     </script>
   </body>
   <div class="thanks-note">
