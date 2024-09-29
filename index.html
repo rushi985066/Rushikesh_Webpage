@@ -507,6 +507,7 @@
         }
       }
     </script>
+
     <script>
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbztNe1mW12kI21HlRkvIepzOkYje9cv5JdrfEnXb2tqZgXWlpdrtaWfmsLfU39HegXZ/exec";
@@ -517,15 +518,16 @@
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-          console.log('Response:', response); // Log the response
-    msg.innerHTML = "Message sent successfully";
-    form.reset();
-  })
-  .catch((error) => {
-    console.error("Error!", error.message);
-    msg.innerHTML = "Error sending message"; // Update message on error
-  });
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
     </script>
+
   </body>
   <div class="thanks-note">
     <p>❤️Thank you for Visiting My Webpage!</p>
